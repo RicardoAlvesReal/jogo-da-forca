@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo da Forca</title>
+<link rel="stylesheet" type="text/css" href="estyle.css">
+</head>
+
+<body>
+	<div id="TOP"><h1 id="X01">JOGO DA FORCA</h1></div>
+	<div id="LEFT"></div>
+	<div id="RIGHT"></div>
+	<div id="MEIO"></div>
+	<div id="BOTTOM"><p id="rdp"><a href="https://www.facebook.com/ricardoalvesreal" target="_blank"><i>Ricardo Alves</i></a></p></div>
+
+<div id="DIVCORPO">
+    <div id="forca">
+	<div id="CHAPEU"></div>
+	    <div id="CABECA">
+	    <div id="ABA"></div>
+	    <p id="ROSTO">(°ʖ°)</p>
+	    <div id="BOCA"></div>
+	    <div id="QUEIXO"></div>
+	    <div id="PESCOCO"></div>
+	    </div>
+
+	<div id="TRONCO">
+	<div id="BRACOD1"><div id="BRACOD2"><div id="MAOD"></div></div></div>
+	<div id="BRACOE1"><div id="BRACOE2"><div id="MAOE"></div></div></div>
+	<div id="COXAD"><div id="PERNAD"><div id="PED"></div></div></div>
+	<div id="COXAE"><div id="PERNAE"><div id="PEE"></div></div></div>
+	</div>
+	<h1 id="h01"></h1>
+    </div>
+	<h1 id="h02"></h1>
+	<p id="h99"></p>
+</div>
+
+    <div id="DIV01" align="left">
+	<p id="Ltr" style="display:none"><b>Letras: </b></p>
+
+<form id="FormPlv" action="" class="style1" style="display:none">
+	<label for="TxtPlv">Palavra:</label>
+	<input type="text" name="TxtPlv" id="TxtPlv" size="12" autofocus/>
+</form>
+
+	<form id="FormOpc" action="" style="display:block";>
+	<input type="radio" name="tipowrd" onclick="PegaTP(this.value)" value="Dicionário">Dicionário<br>
+	
+	<input type="radio" name="tipowrd" onclick="PegaTP(this.value)" value="Fruta">Frutas<br>
+	<input type="radio" name="tipowrd" onclick="PegaTP(this.value)" value="Time">Times<br>
+	</form>
+
+<form id="FormLTR" action="" class="style1" style="display:none">
+	<label for="TxtLtr">Letra:</label>
+	<input type="text" name="TxtLtr" id="TxtLtr" size="4"/>
+</form>
+
+	<p id="h00" style="display:none"></p>
+    </div>
+
+	<audio id="myAudio" controls="controls" autobuffer="autobuffer" style="display:none;position:absolute;left:7.5%;top:56.5%;">
+	<source src="">
+	</audio>
+
+<script type="text/javascript" src="jss.js"></script>
+
+	<button class="button" id="BTN00" style="position:absolute;left:7.5%;top:56.5%;" onclick="RELOAD()">Jogar</button>
+	<button class="button" id="BTN01" style="position:absolute;left:7.5%;top:56.5%;" onclick="TESTA_LETRA()">OK</button>
+	<button class="button" id="BTN02" style="position:absolute;left:7.5%;top:56.5%;" onclick="PegaPalavra()">OK</button>
+	<button class="button" id="BTN03" style="position:absolute;right:7.5%;top:56.5%;" onclick="DICA()">Dica</button>
+	<button class="button" id="BTN04" style="position:absolute;right:7.5%;top:56.5%;" onclick=window.open(LINK);ClearBTN();></button>
+	<p id="AVISO">Escolha a categoria da palavra!</p>
+	<p id="EE">EASTER EGG</p>
+</body>
+</html>
